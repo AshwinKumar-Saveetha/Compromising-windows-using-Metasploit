@@ -110,21 +110,20 @@ On the target Windows machine, open a Web browser and open this URL, replacing t
 Bypass any warning boxes, double-click the file, and allow it to run.
 On kali give the command exploit
 
+<img width="637" height="499" alt="image" src="https://github.com/user-attachments/assets/4047c3d8-6d2a-43b5-848d-e60955b18a83" />
 
 
-To see a list of processes, at the meterpreter > prompt, execute this command: ps ⇒ can see the fun.exe process running with pid 1156
+The target is now owned. Following are meterpreter commands for key capturing in the target machine
+keyscan_start	Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name
 
-The Metasploit shell is running inside the "fun.exe" process. If the user closes that process, or logs off, the connection will be lost. To become more persistent, we'll migrate to a process that will last longer. Let's migrate to the winlogon process. At the meterpreter > prompt, execute this command:
+<img width="388" height="59" alt="image" src="https://github.com/user-attachments/assets/5c539cbd-4376-4e73-9f45-0ebe51afc4fb" />
 
-migrate -N explorer.exe at meterpreter > prompt, execute this command: netstat A list of network connections appears, including one to a remote port of 4444, as highlighted in the image below. Notice the "PID/Program name" value for this connection, which is redacted
-
-#### Post Exploitation:
-The target is now owned. Following are meterpreter commands for key capturing in the target machine keyscan_start Begins capturing keys typed in the target. On the Windows target, open Notepad and type in some text, such as your name.
+<img width="1167" height="874" alt="image" src="https://github.com/user-attachments/assets/01ebaf58-5b28-4e7e-83d5-86394b098770" />
 
 
+keyscan_dump	Shows the keystrokes captured so far
 
-keyscan_dump Shows the keystrokes captured so far
-
+<img width="576" height="223" alt="image" src="https://github.com/user-attachments/assets/a9cef6ad-4c30-4c8f-9ef7-d2467f501492" />
 
 
 ## RESULT:
